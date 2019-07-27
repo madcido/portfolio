@@ -1,0 +1,186 @@
+.google-jk {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: arial,sans-serif;
+  z-index: 10;
+}
+
+.google-jk .header {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  margin: 5px 30px;
+}
+
+.google-jk .header p {
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 15px;
+  color: #222;
+  cursor: pointer;
+}
+
+.google-jk .header p:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.google-jk .header .menu {
+  width: 16px;
+  height: 16px;
+  margin: 0 25px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.google-jk .header .menu:hover {
+  opacity: 1;
+}
+
+.google-jk .header .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.google-jk .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-jk .main .input {
+  box-sizing: border-box;
+  margin: 30px;
+  width: 100%;
+  max-width: 550px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 20px;
+  border: 1px solid #eee;
+  border-radius: 22px;
+  background: url('http://www.gstatic.com/inputtools/images/tia.png') 97% no-repeat;
+  cursor: text;
+  animation: hover-input 0.1s 1.1s forwards;
+}
+
+.google-jk .main .input:hover {
+  box-shadow: 0 1px 6px rgba(30, 30, 30, 0.3);
+}
+
+.google-jk .main .input .search {
+  display: inline;
+  padding-right: 1px;
+  margin: 0;
+  border: 1px solid transparent;
+  animation: typing 1s linear 1.7s infinite;
+}
+
+.google-jk .main .buttons {
+  display: flex;
+}
+
+.google-jk .main .buttons p {
+  margin: 0 5px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  cursor: pointer;
+}
+
+.google-jk .main .buttons p:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+.google-jk .main .buttons p:last-child {
+  animation: hover-button 0.9s 4.8s forwards;
+}
+
+.google-jk .footer {
+  width: 100%;
+  margin-top: 40px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  color: #5f6368;
+  display: flex;
+  justify-content: space-between;
+}
+
+.google-jk .footer div {
+  display: flex;
+}
+
+.google-jk .footer p {
+  padding-left: 27px;
+  margin: 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.google-jk .footer p:hover {
+  text-decoration: underline;
+}
+
+.google-jk .footer p:last-of-type {
+  padding-right: 27px;
+}
+
+.google-jk .mouse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -400px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://images.vexels.com/media/users/3/131771/isolated/preview/052dd0c023d9db3d5244875791c71c54-cursor-de-seta-by-vexels.png');
+  background-size: 20px 20px;
+  animation: mouse 5s  0.5s forwards;
+}
+
+@keyframes typing {
+  49% {border: 1px solid transparent}
+  50% {border-right: 1px solid black}
+  99% {border-right: 1px solid black}
+  100% {border: 1px solid transparent}
+}
+
+@keyframes hover-input {
+  100% {box-shadow: 0 1px 6px rgba(30, 30, 30, 0.3)}
+}
+
+@keyframes hover-button {
+  0% {border: 1px solid #c6c6c6; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); color: #222;}
+  90% {border: 1px solid #c6c6c6}
+  100% {border: 1px solid #4d90fe; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); color: #222;}
+}
+
+@keyframes mouse {
+  0% {margin-top: -100px; margin-left: -400px; background-image: url('https://images.vexels.com/media/users/3/131771/isolated/preview/052dd0c023d9db3d5244875791c71c54-cursor-de-seta-by-vexels.png');}
+  14% {background-image: url('https://images.vexels.com/media/users/3/131771/isolated/preview/052dd0c023d9db3d5244875791c71c54-cursor-de-seta-by-vexels.png');}
+  15% {background-image: url('https://static.thenounproject.com/png/49671-200.png');}
+  25% {margin-top: 0px; margin-left: -30px;}
+  75% {margin-top: 0px; margin-left: -30px;}
+  79% {background-image: url('https://static.thenounproject.com/png/49671-200.png');}
+  80% {background-image: url('https://images.vexels.com/media/users/3/131771/isolated/preview/052dd0c023d9db3d5244875791c71c54-cursor-de-seta-by-vexels.png');}
+  84% {background-image: url('https://images.vexels.com/media/users/3/131771/isolated/preview/052dd0c023d9db3d5244875791c71c54-cursor-de-seta-by-vexels.png');}
+  85% {background-image: url('https://images.vexels.com/media/users/3/130804/isolated/preview/29efc2a26a60f7b5c6ad0e13182c2bdb-hand-cursor-by-vexels.png');}
+  100% {margin-top: 90px; margin-left: 50px; background-image: url('https://images.vexels.com/media/users/3/130804/isolated/preview/29efc2a26a60f7b5c6ad0e13182c2bdb-hand-cursor-by-vexels.png');}
+}

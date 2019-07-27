@@ -1,0 +1,296 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: -55px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 3px solid #fa0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  animation: slide-top 1s ease-out 7s forwards;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin: 0 20px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: 0.3s;
+}
+
+.logo-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 24px;
+}
+
+.logo span {
+  margin-left: 20px;
+  padding-top: 4px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.nav-links a {
+  display: block;
+  margin: 0 20px;
+  padding: 10px;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px transparent;
+}
+
+.nav-links a:hover {
+  color: #fa0;
+  text-shadow: 1px 1px 2px black;
+  background-color: #444;
+}
+
+@keyframes slide-top {
+  0% {top: -55px}
+  100% {top: 0px}
+}
+
+
+/* SOCIAL LINKS */
+
+.social-links {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 60px;
+  margin-top: -40px;
+  display: flex;
+  z-index: 9;
+  flex-direction: column;
+}
+
+.social-links a {
+  position: relative;
+  left: -80px;
+  width: 80px;
+  height: 60px;
+  color: white;
+  text-align: right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: translate(20px, 0);
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  filter: invert(100%);
+}
+
+.github {
+  background-color: #24292e;
+  animation: slide-left 0.5s ease-out 7s forwards;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  animation: slide-left 0.5s ease-out 7.2s forwards;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  animation: slide-left 0.5s ease-out 7.4s forwards;
+}
+
+.message {
+  background-color: crimson;
+  animation: slide-left 0.5s ease-out 7.6s forwards;
+}
+
+@keyframes slide-left {
+  0% {left: -80px}
+  60% {left: 0}
+  100% {left: -20px}
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #fa0;
+  height: 40px;
+  text-align: right;
+  line-height: 40px;
+  color: #333;
+}
+
+
+/* MAIN PAGE */
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#home {
+  min-height: 400px;
+  background-color: #f2f2f2;
+  z-index: 4;
+  animation: shake 0.1s 6.9s;
+}
+
+@keyframes shake {
+  33% {transform: rotate(2deg)}
+  66% {transform: rotate(-2deg)}
+  100% {transform: rotate(0deg)}
+}
+
+#home::before,
+#home::after {
+  content: '';
+  position: absolute;
+  bottom: -45px;
+  width: 50%;
+  height: 100px;
+  background-color: #f2f2f2;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#home::before {
+  left: 0;
+  transform: skew(0, 7deg);
+}
+
+#home::after {
+  right: 0;
+  transform: skew(0, -7deg);
+}
+
+.name {
+  transform: scale(0);
+  margin: 30px 0;
+  font-size: 64px;
+  animation: bounce 0.6s ease forwards;
+}
+
+@keyframes bounce {
+  0% {transform: scale(0)}
+  50% {transform: scale(1.2)}
+  100% {transform: scale(1)}
+}
+
+.title {
+  transform: scale(0);
+  color: red;
+  font-size: 32px;
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 15px;
+  animation: pow 0.2s linear 0.7s forwards;
+}
+
+@keyframes pow {
+  0% {transform: scale(1.5) rotate(-20deg)}
+  100% {transform: scale(1) rotate(-5deg)}
+}
+
+.slogan {
+  margin: 30px 0;
+  font-size: 24px;
+  height: 30px;
+}
+
+#about {
+  background-color: #ddd;
+  z-index: 3;
+}
+
+#about::before,
+#about::after {
+  content: '';
+  position: absolute;
+  bottom: -45px;
+  width: 50%;
+  height: 100px;
+  background-color: #ddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#about::before {
+  left: 0;
+  transform: skew(0, 7deg);
+}
+
+#about::after {
+  right: 0;
+  transform: skew(0, -7deg);
+}
+
+#projects {
+  background-color: #f2f2f2;
+  z-index: 2;
+}
+
+#projects::before,
+#projects::after {
+  content: '';
+  position: absolute;
+  bottom: -45px;
+  width: 50%;
+  height: 100px;
+  background-color: #f2f2f2;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#projects::before {
+  left: 0;
+  transform: skew(0, 7deg);
+}
+
+#projects::after {
+  right: 0;
+  transform: skew(0, -7deg);
+}
+
+#contact {
+  background-color: #ddd;
+  z-index: 1;
+}
