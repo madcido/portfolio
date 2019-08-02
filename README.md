@@ -1,1 +1,1 @@
-Preview: https://raw.githack.com/madcido/portfolio/master/index.html
+https://madcido.github.io/portfolio/
