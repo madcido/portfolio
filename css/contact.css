@@ -74,3 +74,17 @@
 .form button:hover p {
   transform: translateY(-40px);
 }
+
+.formspree img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.formspree p {
+  color: #0f0906;
+  font: bold 10px 'Open Sans', sans-serif, arial;
+}
+
+.formspree a p {
+  letter-spacing: 1px;
+}

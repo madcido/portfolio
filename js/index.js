@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
   document.querySelectorAll('.sidebar a').forEach(link => {
     const linkTop = link.getBoundingClientRect().top;
     if (link.getAttribute('data-in')) {
-      if (navbarTop - linkTop > -50 && navbarTop - linkTop < 60) {
+      if (navbarTop - linkTop > -50 && navbarTop - linkTop < 50) {
         link.classList.remove('social-link-in');
         link.classList.add('social-link-out');
       } else {
