@@ -1,0 +1,92 @@
+/* PORTFOLIO */
+
+#portfolio,
+#portfolio::before,
+#portfolio::after {
+  background-color: #eee;
+}
+
+.filter {
+  height: 40px;
+  margin: 10px 100px 40px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font: 20px less, arial;
+  color: #171717;
+  cursor: pointer;
+  outline: none;
+}
+
+.project {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.project img {
+  height: 100%;
+  z-index: -1;
+  transition: 1s;
+}
+
+.project div {
+  opacity: 0;
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  transition: 1s;
+}
+
+.project a {
+  display: block;
+  width: 130px;
+  margin: 10px auto;
+  color: #f2f2f2;
+}
+
+.project p {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-color: #171717;
+  color: #fa0;
+  text-align: center;
+  line-height: 50px;
+  transition: 1s;
+}
+
+.project:hover {
+  width: 400px;
+}
+
+.project:hover img {
+  filter: brightness(0.5);
+}
+
+.project:hover div {
+  opacity: 1;
+}
+
+.project:hover p {
+  bottom: 0;
+}
+
+.project a:hover span {
+  display: inline-block;
+  animation: back-n-forth 0.5s ease-in infinite alternate;
+}
+
+@keyframes back-n-forth {
+  0% {transform: translate(0)}
+  100% {transform: translate(5px)}
+}

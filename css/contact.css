@@ -1,0 +1,76 @@
+/* CONTACT */
+
+#contact {
+  background-color: #ddd;
+}
+
+.info {
+  width: 300px;
+  margin: 30px 100px;
+}
+
+.info img {
+  width: 28px;
+  margin-right: 14px;
+}
+
+.form {
+  margin: 0 100px;
+}
+
+::placeholder {
+  color: #999;
+  font: 14px light-less, arial;
+}
+
+.form input,
+.form textarea,
+.form button {
+  width: 280px;
+  height: 40px;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: #171717;
+  color: #ccc;
+  font: 16px less, arial;
+}
+
+.form input {
+  padding: 0 10px;
+}
+
+.form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-bottom: 3px solid #fa0;
+}
+
+.form button {
+  width: 300px;
+  padding: 0;
+  color: #fa0;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.form button:focus {
+  outline: none;
+  border: 1px solid #fa0;
+}
+
+.form button p {
+  margin: 0;
+  line-height: 40px;
+  transition: 0.3s;
+}
+
+.form button:hover p {
+  transform: translateY(-40px);
+}

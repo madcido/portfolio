@@ -1,0 +1,108 @@
+/* HOME */
+
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+.template {
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: shake 0.1s 7.4s;
+}
+
+@keyframes shake {
+  33% {transform: rotate(2deg)}
+  66% {transform: rotate(-2deg)}
+  100% {transform: rotate(0deg)}
+}
+
+.name {
+  margin: 0;
+  font: 72px bold-less, arial;
+  color: #171717;
+  text-shadow: 0px 0px 10px #777;
+}
+
+.stamp {
+  height: 200px;
+  margin: 15px 0 35px;
+  opacity: 0;
+  filter: drop-shadow(2px 3px 4px #777) brightness(0.7);
+  animation: pow 0.4s linear 7s forwards;
+}
+
+@keyframes pow {
+  0% {transform: scale(2) rotate(-20deg)}
+  100% {transform: scale(1) rotate(-5deg); opacity: 1}
+}
+
+.slogan {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 24px;
+  color: #f2f2f2;
+  height: 30px;
+  background-color: #171717;
+  opacity: 0;
+  box-shadow: 4px 5px 6px -2px #777;
+  animation: show 0.1s linear 7.3s forwards;
+}
+
+@keyframes show {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.arrow {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  margin-top: 50px;
+  z-index: -1;
+  animation: bounce 1s ease-in 7.4s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(20px)}
+}
+
+.arrow span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  height: 10px;
+  background-color: #171717;
+  box-shadow: 0 4px 4px -4px #777;
+}
+
+@keyframes arrow-grow {
+  0% {width: 0}
+  100% {width: 100px}
+}
+
+.arrow-left {
+  right: 50%;
+  animation: arrow-grow 1.4s linear 5.9s forwards, left-skew 1s 7.4s forwards;
+}
+
+@keyframes left-skew {
+  0% {transform: skewY(0)}
+  100% {transform: skewY(10deg)}
+}
+
+.arrow-right {
+  left: 50%;
+  animation: arrow-grow 1.4s linear 5.9s forwards, right-skew 1s 7.4s forwards;
+}
+
+@keyframes right-skew {
+  0% {transform: skewY(0)}
+  100% {transform: skewY(-10deg)}
+}
