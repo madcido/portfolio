@@ -80,7 +80,7 @@
   width: 40px;
   height: 40px;
   margin: 10px;
-  filter: invert(100%);
+  filter: brightness(0) invert(1);
 }
 
 .github {
