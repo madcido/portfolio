@@ -50,27 +50,22 @@ h1 {
 .content {
   position: relative;
   padding: 70px 0;
-}
-
-.content:not(#contact)::before,
-.content:not(#contact)::after {
-  content: '';
-  position: absolute;
-  bottom: -30px;
-  width: 50%;
-  height: 60px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  text-align: center;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.7));
 }
 
 .content:not(#contact)::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
   left: 0;
-  transform: skew(0, 5deg);
+  width: 100%;
+  height: 50px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
-.content:not(#contact)::after {
-  right: 0;
-  transform: skew(0, -5deg);
+.content > div {
+  flex-wrap: wrap;
 }
 
 .underline {
@@ -184,4 +179,11 @@ h1 {
   25% {transform: scale3d(1.3, 0.7, 1)}
   50% {transform: scale3d(0.8, 1.2, 1)}
   75% {transform: scale3d(1.1, 0.9, 1)}
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+  /* navbar */
 }

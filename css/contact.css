@@ -6,7 +6,8 @@
 
 .info {
   width: 300px;
-  margin: 30px 100px;
+  text-align: left;
+  margin: 0 20px;
 }
 
 .info img {
@@ -15,7 +16,7 @@
 }
 
 .form {
-  margin: 0 100px;
+  margin: 0 20px;
 }
 
 ::placeholder {

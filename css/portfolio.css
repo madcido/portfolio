@@ -1,14 +1,14 @@
 /* PORTFOLIO */
 
 #portfolio,
-#portfolio::before,
-#portfolio::after {
+#portfolio::before {
   background-color: #eee;
+  z-index: 1;
 }
 
 .filter {
   height: 40px;
-  margin: 10px 100px 40px;
+  margin: 10px 20px 40px;
   position: relative;
   border: none;
   background-color: transparent;
