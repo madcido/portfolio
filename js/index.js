@@ -9,10 +9,17 @@ setTimeout(() => {
 }, 7400);
 
 window.addEventListener('scroll', () => {
-  const scrollTop = window.pageYOffset;
+  const scrollTop = window.scrollY;
   const viewHeight = window.innerHeight;
+
   if (scrollTop > viewHeight * 3/4) {
     initSidebar();
+  }
+
+  if (scrollTop + viewHeight >= document.body.scrollHeight) {
+    getNode('.footer').classList.add('slide-in');
+  } else {
+    getNode('.footer').classList.remove('slide-in');
   }
 
   const navbarTop = getNode('.navbar').getBoundingClientRect().top;

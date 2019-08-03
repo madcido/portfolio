@@ -11,14 +11,14 @@
   z-index: 2;
 }
 
-.google-jk .header {
+.google-jk .top {
   align-self: flex-end;
   display: flex;
   align-items: center;
   margin: 5px 30px;
 }
 
-.google-jk .header p {
+.google-jk .top p {
   font-size: 13px;
   line-height: 24px;
   padding-left: 15px;
@@ -26,12 +26,12 @@
   cursor: pointer;
 }
 
-.google-jk .header p:hover {
+.google-jk .top p:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
 
-.google-jk .header .menu {
+.google-jk .top .menu {
   width: 16px;
   height: 16px;
   margin: 0 25px;
@@ -39,18 +39,18 @@
   cursor: pointer;
 }
 
-.google-jk .header .menu:hover {
+.google-jk .top .menu:hover {
   opacity: 1;
 }
 
-.google-jk .header .avatar {
+.google-jk .top .avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.google-jk .main {
+.google-jk .mid {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
   justify-content: center;
 }
 
-.google-jk .main .input {
+.google-jk .mid .input {
   box-sizing: border-box;
   margin: 30px;
   width: 100%;
@@ -73,11 +73,11 @@
   animation: hover-input 0.1s 1.1s forwards;
 }
 
-.google-jk .main .input:hover {
+.google-jk .mid .input:hover {
   box-shadow: 0 1px 6px rgba(30, 30, 30, 0.3);
 }
 
-.google-jk .main .input .search {
+.google-jk .mid .input .search {
   display: inline;
   padding-right: 1px;
   margin: 0;
@@ -85,11 +85,11 @@
   animation: typing 1s linear 1.7s infinite;
 }
 
-.google-jk .main .buttons {
+.google-jk .mid .buttons {
   display: flex;
 }
 
-.google-jk .main .buttons p {
+.google-jk .mid .buttons p {
   margin: 0 5px;
   height: 36px;
   line-height: 36px;
@@ -103,17 +103,17 @@
   cursor: pointer;
 }
 
-.google-jk .main .buttons p:hover {
+.google-jk .mid .buttons p:hover {
   border: 1px solid #c6c6c6;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #222;
 }
 
-.google-jk .main .buttons p:last-child {
+.google-jk .mid .buttons p:last-child {
   animation: hover-button 0.9s 4.8s forwards;
 }
 
-.google-jk .footer {
+.google-jk .bot {
   width: 100%;
   margin-top: 40px;
   background: #f2f2f2;
@@ -124,22 +124,22 @@
   justify-content: space-between;
 }
 
-.google-jk .footer div {
+.google-jk .bot div {
   display: flex;
 }
 
-.google-jk .footer p {
+.google-jk .bot p {
   padding-left: 27px;
   margin: 0;
   font-size: 13px;
   cursor: pointer;
 }
 
-.google-jk .footer p:hover {
+.google-jk .bot p:hover {
   text-decoration: underline;
 }
 
-.google-jk .footer p:last-of-type {
+.google-jk .bot p:last-of-type {
   padding-right: 27px;
 }
 
