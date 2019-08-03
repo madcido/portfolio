@@ -52,11 +52,21 @@ window.addEventListener('scroll', () => {
   document.querySelectorAll('.nav-links a').forEach(link => {
     const sectionTop = getNode(link.getAttribute('href')).getBoundingClientRect().top;
     if (sectionTop > viewHeight * (-1/2) && sectionTop < viewHeight * 1/4) {
-      link.classList.add('selected');
+      link.classList.add('active');
     } else {
-      link.classList.remove('selected');
+      link.classList.remove('active');
     }
   });
+});
+
+document.addEventListener('click', event => {
+  if (event.target.classList.contains('nav-burger')) {
+    getNode('.nav-burger').classList.toggle('open');
+    getNode('.nav-menu').classList.toggle('show');
+  } else {
+    getNode('.nav-burger').classList.remove('open');
+    getNode('.nav-menu').classList.remove('show');
+  }
 });
 
 document.querySelectorAll('.description span').forEach(node => {

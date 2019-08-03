@@ -184,6 +184,17 @@ h1 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 900px) {
-  /* navbar */
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-burger {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo span {
+    display: none;
+  }
 }
