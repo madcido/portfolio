@@ -102,9 +102,10 @@
   margin-right: -50px;
   height: 0;
   overflow: hidden;
+  border-top:3px solid #fa0;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .show {

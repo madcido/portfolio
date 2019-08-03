@@ -49,9 +49,10 @@ window.addEventListener('scroll', () => {
     }
   });
 
-  document.querySelectorAll('.nav-links a').forEach(link => {
+  document.querySelectorAll('.nav-link').forEach(link => {
     const sectionTop = getNode(link.getAttribute('href')).getBoundingClientRect().top;
-    if (sectionTop > viewHeight * (-1/2) && sectionTop < viewHeight * 1/4) {
+    const sectionBottom = getNode(link.getAttribute('href')).getBoundingClientRect().bottom;
+    if (sectionTop < viewHeight * 2/5 && sectionBottom > viewHeight * 3/5) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
