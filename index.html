@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Fabio Carmo</title>
     <link rel="stylesheet" href="./css/navs.css">
@@ -26,9 +27,10 @@
         <img src="./images/mail.png" alt="mail icon">
       </a>
     </nav>
-    <div class="template col center justify-center">
+    <header class="template">
       <div class="google-jk">
-        <div class="mouse"></div>
+        <div class="mouse">
+        </div>
         <div class="top">
           <p>Gmail</p>
           <p>Images</p>
@@ -58,18 +60,20 @@
           </div>
         </div>
       </div>
-      <a class="col center justify-center" href="#about">
+      <a href="#about">
         <p class="name"></p>
-        <img class="stamp" src="./images/rubber-stamp.png" alt="awesome developer stamp">
+        <div class="stamp">
+          <img src="./images/rubber-stamp.png" alt="awesome developer stamp">
+        </div>
         <p class="slogan"></p>
         <div class="arrow">
           <span class="arrow-left"></span>
           <span class="arrow-right"></span>
         </div>
       </a>
-    </div>
-    <header id="home">
     </header>
+    <section id="home">
+    </section>
     <nav class="navbar">
       <div class="container row center justify-between">
         <div class="logo row center">
@@ -94,82 +98,101 @@
       </div>
     </nav>
     <section class="content" id="about">
-      <h1 class="underline from-right" data-animate="slide-in">About</h1>
-      <div class="container row start justify-evenly">
-        <div class="col">
-          <div class="picture row center justify-center from-top" data-animate="slide-in">
+      <div class="container">
+        <h1 class="underline from-right" data-animate="slide-in">About</h1>
+        <div class="row start justify-evenly wrap">
+          <div class="col">
+            <div class="picture row center justify-center from-top" data-animate="slide-in">
+            </div>
+            <p class="description from-left" data-animate="slide-in">
+              Hi, my name is Fabio and I'm a full stack developer based in
+              São Paulo, Brazil. I'm really passionate about creating
+              <span>U</span><span>I</span> <span>e</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>,
+              yet still keeping it simple and clean. When not coding,
+              you can find me playing some game or taking care of my garden.
+            </p>
           </div>
-          <p class="description from-left" data-animate="slide-in">
-            Hi, my name is Fabio and I'm a full stack developer based in
-            São Paulo, Brazil. I'm really passionate about creating
-            <span>U</span><span>I</span> <span>e</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>,
-            yet still keeping it simple and clean. When not coding,
-            you can find me playing some game or taking care of my garden.
-          </p>
-        </div>
-        <div class="col">
-          <div class="skill row center from-right" data-animate="slide-in">
-            <img src="./images/responsive.png" alt="">
-            <p class="underline"><span>Responsive:</span> Pages should look beautiful in any device, big or small.</p>
-          </div>
-          <div class="skill row center from-right" data-animate="slide-in">
-            <p class="underline"><span>User Friendly:</span> Let's build someting intuitive, amazing and fun for everybody.</p>
-            <img src="./images/user-friendly.png" alt="">
-          </div>
-          <div class="skill row center from-right" data-animate="slide-in">
-            <img src="./images/dynamic.png" alt="">
-            <p class="underline"><span>Dynamic:</span> Life is made of movement and so every page should be.</p>
-          </div>
-          <div class="skill row center from-right" data-animate="slide-in">
-            <p class="underline"><span>Clean Code:</span> Write a good code now, thank yourself in the future.</p>
-            <img src="./images/clean-code.png" alt="">
+          <div class="col">
+            <div class="skill row center from-right" data-animate="slide-in">
+              <img src="./images/responsive.png" alt="">
+              <p class="underline"><span>Responsive:</span> Pages should look beautiful in any device, big or small.</p>
+            </div>
+            <div class="skill row center from-right" data-animate="slide-in">
+              <img src="./images/user-friendly.png" alt="">
+              <p class="underline"><span>User Friendly:</span> Let's build someting intuitive, amazing and fun for everybody.</p>
+            </div>
+            <div class="skill row center from-right" data-animate="slide-in">
+              <img src="./images/dynamic.png" alt="">
+              <p class="underline"><span>Dynamic:</span> Life is made of movement and so every page should be.</p>
+            </div>
+            <div class="skill row center from-right" data-animate="slide-in">
+              <img src="./images/clean-code.png" alt="">
+              <p class="underline"><span>Clean Code:</span> Write a good code now, thank yourself in the future.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="content" id="portfolio">
-      <h1 class="underline from-left" data-animate="slide-in">Portfolio</h1>
-      <div class="container row justify-evenly">
-        <button class="filter from-right" data-animate="slide-in" data-filter="highlights">Highlights</button>
-        <button class="filter from-right" data-animate="slide-in" data-filter="javascript">Javascript</button>
-        <button class="filter from-right" data-animate="slide-in" data-filter="rails">Ruby on Rails</button>
-      </div>
-      <div class="projects-display container row justify-center">
+      <div class="container">
+        <h1 class="underline from-left" data-animate="slide-in">Portfolio</h1>
+        <div class="row center justify-evenly wrap">
+          <button class="filter from-right" data-animate="slide-in" data-filter="highlights">Highlights</button>
+          <button class="filter from-right" data-animate="slide-in" data-filter="javascript">Javascript</button>
+          <button class="filter from-right" data-animate="slide-in" data-filter="rails">Ruby on Rails</button>
+        </div>
+        <div class="projects-display row center justify-center wrap">
+        </div>
       </div>
     </section>
     <section class="content" id="contact">
-      <h1 class="underline from-right" data-animate="slide-in">Contact</h1>
-      <div class="container row start justify-evenly">
-        <div class="info col start">
-          <div class="row center from-bottom" data-animate="slide-in">
-            <img src="./images/mail.png" alt="mail icon">
-            <p>madcido@gmail.com</p>
+      <div class="container">
+        <h1 class="underline from-right" data-animate="slide-in">Contact</h1>
+        <div class="row start justify-evenly wrap">
+          <div class="info col start">
+            <div class="social-media row center justify-around from-left" data-animate="slide-in">
+              <a target:"_blank" href="https://github.com/madcido">
+                <img src="./images/github.png" alt="github icon">
+              </a>
+              <a target:"_blank" href="https://www.linkedin.com/in/madcido/">
+                <img src="./images/linkedin.png" alt="linkedin icon">
+              </a>
+              <a target:"_blank" href="https://twitter.com/madcido">
+                <img src="./images/twitter.png" alt="twitter icon">
+              </a>
+            </div>
+            <div class="row center from-bottom" data-animate="slide-in">
+              <img class="contact-icon" src="./images/mail.png" alt="mail icon">
+              <p>madcido@gmail.com</p>
+            </div>
+            <div class="row center from-bottom" data-animate="slide-in">
+              <img class="contact-icon" src="./images/zap.png" alt="whatsapp icon">
+              <p>+55 11 95159 7238</p>
+            </div>
+            <p class="from-bottom" data-animate="slide-in">You can also leave a message here and I'll get back to you as soon as possible.</p>
           </div>
-          <div class="row center from-bottom" data-animate="slide-in">
-            <img src="./images/zap.png" alt="whatsapp icon">
-            <p>+55 11 95159 7238</p>
-          </div>
-          <p class="from-bottom" data-animate="slide-in">You can also leave a message here and I'll get back to you as soon as possible.</p>
+          <form class="form col" action="https://formspree.io/fabowow@gmail.com" method="post">
+            <input type="text" name="name" placeholder="What's your name?" class="from-right" data-animate="slide-in">
+            <input type="email" name="email" placeholder="And your e-mail?" class="from-left" data-animate="slide-in">
+            <div class="col from-right" data-animate="slide-in">
+              <textarea name="message" placeholder="Now tell me how can I help you =D"></textarea>
+              <button type="submit"><p>Don't be shy</p><p>Just say hi</p></button>
+            </div>
+            <div class="formspree row center justify-end">
+              <p>Powered by </p>
+              <a href="https://formspree.io" class="row center">
+                <img src="./images/formspree.png" alt="formspree icon">
+                <p>FORMSPREE</p>
+              </a>
+            </div>
+          </form>
         </div>
-        <form class="form col" action="https://formspree.io/fabowow@gmail.com" method="post">
-          <input type="text" name="name" placeholder="What's your name?" class="from-left" data-animate="slide-in">
-          <input type="email" name="email" placeholder="And your e-mail?" class="from-right" data-animate="slide-in">
-          <textarea name="message" placeholder="Now tell me how can I help you =D" class="from-left" data-animate="slide-in"></textarea>
-          <button type="submit" class="from-right" data-animate="slide-in"><p>Don't be shy</p><p>Just say hi</p></button>
-          <div class="formspree row center justify-end">
-            <p>Powered by </p>
-            <a href="https://formspree.io" class="row center">
-              <img src="./images/formspree.png" alt="formspree icon">
-              <p>FORMSPREE</p>
-            </a>
-          </div>
-        </form>
       </div>
       <footer class='footer'>
-      <div class="container">
-        Fabio Carmo ©2019
-      </div>
-    </footer>
+        <div class="container">
+          <p>Fabio Carmo ©2019</p>
+        </div>
+      </footer>
     </section>
     <script src='./js/projects.js'></script>
     <script src='./js/util.js'></script>

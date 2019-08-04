@@ -26,12 +26,14 @@ window.addEventListener('scroll', () => {
   const nameTop = getNode('.name').getBoundingClientRect().top;
   if (navbarTop - nameTop < 20) {
     getNode('.logo').classList.add('slide-in');
+    getNode('.logo a').style.pointerEvents = 'auto';
   } else {
     getNode('.logo').classList.remove('slide-in');
+    getNode('.logo a').style.pointerEvents = 'none';
   }
 
   document.querySelectorAll('[data-animate]').forEach(node => {
-    if (node.getBoundingClientRect().top + 150 < viewHeight) {
+    if (node.getBoundingClientRect().top < viewHeight * 0.8) {
       node.classList.add(node.getAttribute('data-animate'));
     }
   });
@@ -52,7 +54,7 @@ window.addEventListener('scroll', () => {
   document.querySelectorAll('.nav-link').forEach(link => {
     const sectionTop = getNode(link.getAttribute('href')).getBoundingClientRect().top;
     const sectionBottom = getNode(link.getAttribute('href')).getBoundingClientRect().bottom;
-    if (sectionTop < viewHeight * 2/5 && sectionBottom > viewHeight * 3/5) {
+    if (sectionTop < viewHeight * 0.4 && sectionBottom > viewHeight * 0.6) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');

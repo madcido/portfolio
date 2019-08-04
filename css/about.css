@@ -1,15 +1,15 @@
 /* ABOUT */
 
 #about,
-#about::before {
+#about::after {
   background-color: #ccc;
   z-index: 2;
 }
 
 .picture {
-  width: 480px;
+  max-width: 480px;
   height: 250px;
-  margin: 10px 20px;
+  margin: 10px;
   padding: 10px;
   border-radius: 50px 0;
   background-color: #f2f2f2;
@@ -33,8 +33,8 @@
 
 .description {
   box-sizing: border-box;
-  width: 500px;
-  margin: 10px 20px;
+  max-width: 500px;
+  margin: 10px;
   padding: 20px;
   background-color: #171717;
   color: #ccc;
@@ -47,14 +47,23 @@
 }
 
 .skill {
-  width: 500px;
+  max-width: 500px;
   height: 75px;
-  margin: 20px;
+  margin: 20px 10px;
 }
 
 .skill img {
   width: 90px;
   padding: 0 10px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5))
+}
+
+.skill:nth-child(odd) img {
+  order: 1;
+}
+
+.skill:nth-child(even) img {
+  order: 3;
 }
 
 .skill p {
@@ -62,6 +71,7 @@
   padding: 10px;
   color: #171717;
   text-align: center;
+  order: 2;
 }
 
 .skill span {

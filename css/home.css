@@ -2,17 +2,20 @@
 
 #home {
   height: 100vh;
-  width: 100vw;
+}
+
+.template a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .template {
   background-image: url('../images/1.jpg');
   background-size: cover;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   animation: shake 0.1s 7.4s;
 }
 
@@ -24,14 +27,31 @@
 
 .name {
   margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  margin-top: -210px;
+  left: 50%;
+  transform: translateX(-50%);
   font: 72px bold-less, arial;
   color: #171717;
   text-shadow: 0px 0px 10px #777;
 }
 
 .stamp {
+  position: absolute;
+  top: 50%;
+  margin-top: -105px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
   height: 200px;
-  margin: 15px 0 35px;
+  z-index: -1;
+}
+
+.stamp img {
+  width: 100%;
+  height: 100%;
   opacity: 0;
   filter: drop-shadow(2px 3px 4px #777) brightness(0.7);
   animation: pow 0.4s linear 7s forwards;
@@ -43,11 +63,15 @@
 }
 
 .slogan {
-  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  margin-top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 15px;
   font-size: 24px;
   color: #f2f2f2;
-  height: 30px;
   background-color: #171717;
   opacity: 0;
   box-shadow: 4px 5px 6px -2px #777;
@@ -60,11 +84,11 @@
 }
 
 .arrow {
-  position: relative;
-  width: 200px;
-  height: 20px;
-  margin-top: 50px;
-  z-index: -1;
+  position: absolute;
+  top: 50%;
+  margin-top: 200px;
+  left: 50%;
+  filter: drop-shadow(0px 0px 10px #777);
   animation: bounce 1s ease-in 7.4s infinite alternate;
 }
 
