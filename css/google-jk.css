@@ -15,7 +15,7 @@
   align-self: flex-end;
   display: flex;
   align-items: center;
-  margin: 5px 30px;
+  margin: 0 30px;
 }
 
 .google-jk .top p {
@@ -60,7 +60,7 @@
 
 .google-jk .mid .input {
   box-sizing: border-box;
-  margin: 30px;
+  margin: 20px;
   width: 100%;
   max-width: 550px;
   height: 44px;
@@ -115,13 +115,12 @@
 
 .google-jk .bot {
   width: 100%;
-  margin-top: 40px;
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   line-height: 40px;
   color: #5f6368;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .google-jk .bot div {
@@ -177,8 +176,8 @@
   0% {margin-top: -100px; margin-left: -400px; background-image: url('../images/cursor.png');}
   14% {background-image: url('../images/cursor.png');}
   15% {background-image: url('../images/typing.png');}
-  25% {margin-top: 0px; margin-left: -30px;}
-  75% {margin-top: 0px; margin-left: -30px;}
+  25% {margin-top: 20px; margin-left: -30px;}
+  75% {margin-top: 20px; margin-left: -30px;}
   79% {background-image: url('../images/typing.png');}
   80% {background-image: url('../images/cursor.png');}
   84% {background-image: url('../images/cursor.png');}

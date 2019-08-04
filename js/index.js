@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
   }
 
   document.querySelectorAll('[data-animate]').forEach(node => {
-    if (node.getBoundingClientRect().top < viewHeight * 0.8) {
+    if (node.getBoundingClientRect().top < viewHeight * 0.9) {
       node.classList.add(node.getAttribute('data-animate'));
     }
   });
@@ -72,7 +72,7 @@ document.addEventListener('click', event => {
   }
 });
 
-document.querySelectorAll('.description span').forEach(node => {
+document.querySelectorAll('.fx span').forEach(node => {
   node.addEventListener('mouseover', () => {
     node.classList.add('boing');
     setTimeout(() => node.classList.remove('boing'), 500);

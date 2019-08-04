@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.fx {
+  white-space: nowrap;
+}
+
 .description span {
   color: #fa0;
   display: inline-block;
