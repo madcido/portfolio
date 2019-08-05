@@ -28,57 +28,59 @@
   overflow: hidden;
 }
 
+.project:nth-child(4),
+.project:nth-child(6) {
+  align-items: flex-start;
+}
+
+.project:nth-child(5) {
+  align-items: flex-end;
+}
+
 .project img {
   height: 100%;
-  z-index: -1;
   transition: 1s;
 }
 
-.project div {
-  opacity: 0;
+.project > div {
   position: absolute;
-  bottom: 45%;
-  right: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: #171717;
+  border-bottom: 3px solid #fa0;
   text-align: center;
   transition: 1s;
+}
+
+.project-name {
+  margin: 0;
+  margin-top: 15px;
+  color: #fa0;
+}
+
+.project-type {
+  margin: 0;
+  color: #ccc;
+  font: italic 16px light-less, arial;
 }
 
 .project a {
   display: block;
-  width: 130px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
   margin: 10px auto;
   color: #f2f2f2;
 }
-
-.project p {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  background-color: #171717;
-  color: #fa0;
-  text-align: center;
-  line-height: 50px;
-  transition: 1s;
-}
-
-/* .project:hover {
-  max-width: 400px;
-} */
 
 .project:hover img {
   filter: brightness(0.5);
 }
 
-.project:hover div {
-  opacity: 1;
-}
-
-.project:hover p {
-  bottom: 0;
+.project:hover > div {
+  transform: translateY(0);
 }
 
 .project a:hover span {

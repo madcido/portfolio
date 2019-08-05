@@ -27,6 +27,25 @@
   margin-right: 14px;
 }
 
+.info-border {
+  position: relative;
+  padding: 10px 0;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.info-border::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+}
+
 .form {
   width: 100%;
   max-width: 350px;

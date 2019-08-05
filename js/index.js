@@ -79,8 +79,4 @@ document.querySelectorAll('.fx span').forEach(node => {
   });
 });
 
-document.querySelectorAll('[data-filter]').forEach(node => {
-  node.addEventListener('click', event => displayProjects(event.target));
-});
-
-displayProjects(document.querySelectorAll('[data-filter]')[0]);
+displayProjects();
