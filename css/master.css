@@ -25,6 +25,7 @@ html {
 body {
   margin: 0;
   font-family: less, arial;
+  user-select: none;
 }
 
 a {
@@ -81,16 +82,10 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 auto;
+  width: 80%;
   height: 100%;
   border-bottom: 3px solid #fa0;
   z-index: -1;
-  animation: underline 0.5s forwards;
-}
-
-
-@keyframes underline {
-  0% {width: 0}
-  100% {width: 80%}
 }
 
 
@@ -164,12 +159,6 @@ h1 {
 .from-top {
   opacity: 0;
   transform: translateY(-50px);
-  transition: 1s;
-}
-
-.from-bottom {
-  opacity: 0;
-  transform: translateY(50px);
   transition: 1s;
 }
 

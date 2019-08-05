@@ -24,7 +24,11 @@
 
 .contact-icon {
   width: 28px;
-  margin-right: 14px;
+}
+
+.contact-info {
+  padding: 0 16px;
+  user-select: text;
 }
 
 .info-border {
@@ -120,4 +124,5 @@
 
 .formspree a p {
   letter-spacing: 1px;
+  cursor: pointer;
 }
