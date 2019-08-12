@@ -61,6 +61,10 @@
   font: 14px light-less, arial;
 }
 
+input::placeholder {
+  line-height: 40px;
+}
+
 .form input,
 .form textarea,
 .form button {
