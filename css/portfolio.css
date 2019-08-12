@@ -48,7 +48,7 @@
 }
 
 .project-type {
-  margin: 0;
+  margin: 5px 0;
   color: #ccc;
   font: italic 16px light-less, arial;
 }
