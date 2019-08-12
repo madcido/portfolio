@@ -6,19 +6,6 @@
   z-index: 1;
 }
 
-.filter {
-  height: 40px;
-  margin: 10px 20px 40px;
-  position: relative;
-  border: none;
-  background-color: transparent;
-  text-align: center;
-  font: 20px less, arial;
-  color: #171717;
-  cursor: pointer;
-  outline: none;
-}
-
 .project {
   position: relative;
   max-width: 350px;

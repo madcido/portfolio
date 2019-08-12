@@ -25,20 +25,11 @@ html {
 body {
   margin: 0;
   font-family: less, arial;
-  user-select: none;
 }
 
 a {
   text-decoration: none;
   outline: none;
-}
-
-h1, p, span {
-  cursor: default;
-}
-
-a > p {
-  cursor: pointer;
 }
 
 h1 {
