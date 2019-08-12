@@ -30,10 +30,15 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 h1, p, span {
   cursor: default;
+}
+
+a > p {
+  cursor: pointer;
 }
 
 h1 {
