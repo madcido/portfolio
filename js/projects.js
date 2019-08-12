@@ -8,7 +8,7 @@ const projects = [
   },
   {
     type: 'Pure JS',
-    link: 'https://raw.githack.com/btuerker/js-battleship/dev/dist/index.html',
+    link: 'https://raw.githack.com/madcido/js-battleship/master/dist/index.html',
     repo: 'https://github.com/madcido/js-battleship',
     name: 'Battleship Game',
     ss: './images/bs.png'
