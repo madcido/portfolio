@@ -24,8 +24,8 @@ function renderProject(project) {
       <p class="project-name">${project.name}</p>
       <p class="project-type">${project.type}</p>
       <div class="row justify-center">
-        <a href="${project.repo}">Github Repo <span>></span></a>
-        <a href="${project.link}">Live preview <span>></span></a>
+        <a href="${project.repo}">Github Repo <span>▶</span></a>
+        <a href="${project.link}">Live preview <span>▶</span></a>
       </div>
     </div>
   `;
