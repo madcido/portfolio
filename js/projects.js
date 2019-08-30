@@ -1,4 +1,4 @@
-const projects = [
+﻿const projects = [
   {
     type: 'Ruby on Rails • JS',
     link: 'http://blooming-retreat-56703.herokuapp.com',
@@ -28,11 +28,11 @@ const projects = [
     ss: './images/wa.png'
   },
   {
-    type: 'Ruby on Rails',
-    link: 'https://tranquil-journey-59173.herokuapp.com/login',
-    repo: 'https://github.com/madcido/private-events',
-    name: 'Private Events',
-    ss: './images/pe.png'
+    type: 'React',
+    link: 'https://vast-reaches-91700.herokuapp.com',
+    repo: 'https://github.com/madcido/torre',
+    name: 'Torre Prototype',
+    ss: './images/tp.png'
   },
   {
     type: 'Pure JS',
