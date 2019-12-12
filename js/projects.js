@@ -7,7 +7,7 @@
     ss: './images/pb.png'
   },
   {
-    type: 'Pure JS',
+    type: 'Vanilla JS',
     link: 'https://raw.githack.com/madcido/js-battleship/master/dist/index.html',
     repo: 'https://github.com/madcido/js-battleship',
     name: 'Battleship Game',
@@ -21,7 +21,7 @@
     ss: './images/rc.png'
   },
   {
-    type: 'Pure JS',
+    type: 'Vanilla JS',
     link: 'https://raw.githack.com/madcido/weather-app/master/index.html',
     repo: 'https://github.com/madcido/weather-app',
     name: 'Weather App',
@@ -35,7 +35,7 @@
     ss: './images/tp.png'
   },
   {
-    type: 'Pure JS',
+    type: 'Vanilla JS',
     link: 'https://raw.githack.com/madcido/restaurant-page/master/index.html',
     repo: 'https://github.com/madcido/restaurant-page',
     name: 'Purrfect Coffee House',
