@@ -1,6 +1,6 @@
 ﻿const projects = [
   {
-    type: 'Ruby on Rails • JS',
+    type: 'Ruby on Rails',
     link: 'http://blooming-retreat-56703.herokuapp.com',
     repo: 'https://github.com/madcido/purplebook',
     name: 'Purplebook',
