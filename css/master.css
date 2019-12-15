@@ -32,6 +32,10 @@ a {
   outline: none;
 }
 
+.is-tabbing a:focus {
+  outline: 1px dotted gray;
+}
+
 h2 {
   margin: 50px 0;
   color: #171717;
