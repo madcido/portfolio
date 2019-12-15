@@ -51,6 +51,7 @@
   line-height: 30px;
   margin: 10px auto;
   color: #f2f2f2;
+  outline: none;
 }
 
 .project:hover img {
@@ -61,7 +62,8 @@
   transform: translateY(0);
 }
 
-.project a:hover span {
+.project a:hover span,
+.project a:focus span {
   display: inline-block;
   animation: back-n-forth 0.5s ease-in infinite alternate;
 }
