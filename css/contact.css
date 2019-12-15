@@ -98,10 +98,10 @@ input::placeholder {
   color: #fa0;
   border: 1px solid transparent;
   overflow: hidden;
+  outline: none;
 }
 
 .form button:focus {
-  outline: none;
   border: 1px solid #fa0;
 }
 
@@ -112,7 +112,8 @@ input::placeholder {
   transition: 0.3s;
 }
 
-.form button:hover p {
+.form button:hover p,
+.form button:focus p {
   transform: translateY(-40px);
 }
 
