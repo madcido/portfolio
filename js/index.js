@@ -80,3 +80,21 @@ document.querySelectorAll('.fx span').forEach(node => {
 });
 
 displayProjects();
+
+function isTabbing(evnt) {
+  if (evnt.keyCode === 9) {
+    document.body.classList.add('is-tabbing');
+    
+    window.removeEventListener('keydown', isTabbing);
+    window.addEventListener('mousedown', isMousing);
+  }
+}
+
+function isMousing() {
+  document.body.classList.remove('is-tabbing');
+  
+  window.removeEventListener('mousedown', isMousing);
+  window.addEventListener('keydown', isTabbing);
+}
+
+window.addEventListener('keydown', isTabbing);
