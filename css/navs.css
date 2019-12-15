@@ -47,10 +47,12 @@
   font-size: 18px;
   line-height: 50px;
   color: #ccc;
+  outline: none;
   transition: 0.3s;
 }
 
 .nav-link:hover,
+.nav-link:focus,
 .nav-link.active {
   color: #fa0;
 }
@@ -137,10 +139,12 @@
   height: 60px;
   color: white;
   text-align: right;
+  outline: none;
   transition: transform 0.2s ease-in-out;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar a:focus {
   transform: translate(20px, 0);
 }
 
