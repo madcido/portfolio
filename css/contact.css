@@ -76,6 +76,8 @@ input::placeholder {
   background-color: #171717;
   color: #ccc;
   font: 16px less, arial;
+  outline: none;
+  transition: 1s;
 }
 
 .form input {
@@ -89,7 +91,6 @@ input::placeholder {
 
 .form input:focus,
 .form textarea:focus {
-  outline: none;
   border-bottom: 3px solid #fa0;
 }
 
@@ -98,7 +99,6 @@ input::placeholder {
   color: #fa0;
   border: 1px solid transparent;
   overflow: hidden;
-  outline: none;
 }
 
 .form button:focus {
