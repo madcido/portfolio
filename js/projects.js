@@ -15,10 +15,10 @@
   },
   {
     type: 'React',
-    link: 'https://immense-cliffs-66075.herokuapp.com',
-    repo: 'https://github.com/madcido/react-calculator',
-    name: 'Girly Calculator',
-    ss: './images/rc.png'
+    link: 'https://raw.githack.com/madcido/react-todo/master/index.html',
+    repo: 'https://github.com/madcido/react-todo',
+    name: 'To-do List',
+    ss: './images/tl.png'
   },
   {
     type: 'Vanilla JS',
