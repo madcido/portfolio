@@ -36,6 +36,11 @@ a {
   outline: 1px dotted gray;
 }
 
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 h2 {
   margin: 50px 0;
   color: #171717;
